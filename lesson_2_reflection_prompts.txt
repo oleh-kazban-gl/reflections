@@ -1,0 +1,21 @@
+What happens when you initialize a repository? Why do you need to do it?
+	When we run "git init" out VCS system initializates the local repository, putting the folder ".git" in the root of the project. This folder is used for storage of version cycle of files.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+	Working directiry storage files, but it isn't an repository and thus it can be used for normal versioning. Stage area is area where files are added with neccessary changes which can be than commited into the branch.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	
+	Branches helps us to develop several versions in parallel - for example stable versions (for production), developer version (which is intensivelly growth up) and experimental version (for example for testing of new features, alorithms, etc)
+
+How do the diagrams help you visualize the branch structure?
+
+	Diagrams visualises structure of the branch with "waypoints" of commits, thus we can see the progress and milestones of current branch as commits history.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	The result of merging of two braches is result branch, which normall must include all changes from one branch and all changes from other branch if they are not correlating (in meaning that changes are resolved without any questions).
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+	Advantages - that non-conflict changes are merged by git in auto mode, without involving of developer - this is much more faster than if we merge our branches by hands (but  this is can be buggy merge because of human's irreliability). But Git can't resolve conflicts in merging branches, so developer must see what are diffs in the code and make merge by itself.
