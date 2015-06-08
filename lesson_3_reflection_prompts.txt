@@ -14,3 +14,6 @@ What is the benefit of having a copy of the last known state of the remote store
 
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 	Through the web-interface, by creating the pull requests. It would be easier to view and comment the changes,  but it would be harder to fix changes on conflict.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+	When I achive some versions conflict, thus I can merge two branches and resolve conflicts. If we use separate branches we can merge them, see if we have conflicts, resolve them and finaly merge the branches. So if we use separate branch, we unsure that master is always in right state, without conflicts. On the other hand simple conflicts we can resolve right in the master branch.
